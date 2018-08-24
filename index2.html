@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head> 
+     <title>Accordion Rotator - by plusquare</title>
+     <link href="css/main.css" rel="stylesheet" type="text/css" />
+     <link href="css/accordion.css" rel="stylesheet" type="text/css" />
+     
+	<script type="text/javascript" src="jquery/jquery-1.6.2.min.js"></script> 
+	<script src="js/pngFixer.js"></script>
+	<script src="js/accordion.js"></script>
+	<script src="js/buttons.js"></script>
+
+     </head> 
+	<body>
+	<div id="main">
+     	<div id="center">
+               
+  
+          <h2>Animation like accordion</h2>
+               
+      		<div id="accordion1" class="accordion">
+                    <div class="holder">
+                    
+                    	<a href="#" target="_blank">
+                         <div class="block">
+                              <div class="content_holder" src="images/example_3/01.jpg">
+                              
+                                   <div class="image"></div>
+                                   <div class="content" transitionType="bottom" transitionTime="0.5" distance="30" delay="0" x="0" y="0" alignV="bottom">
+                                        <div class="box"><p class="title">Wire Madness</p><p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
+                                   </div>
+                              </div>
+                         </div>
+                         </a>
+                         
+                         <a href="#" target="_blank">
+                         <div class="block">
+                              <div class="content_holder" src="images/example_3/02.jpg">
+                                   <div class="image"></div>
+                                   <div class="content" transitionType="bottom" transitionTime="0.5" distance="30" delay="0" x="0" y="0" alignV="bottom">
+                                        <div class="box"><p class="title">Playing time</p><p class="text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibhs euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+                                   </div>
+                              </div>
+                         </div>
+                         </a>
+                         
+                         <a href="#" target="_blank">
+                         <div class="block">
+                              <div class="content_holder" src="images/example_3/03.jpg">
+                                   <div class="image"></div>
+                                   <div class="content" transitionType="bottom" transitionTime="0.5" distance="30" delay="0" x="0" y="0" alignV="bottom">
+                                        <div class="box"><p class="title">What the duck</p><p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p></div>
+                                   </div>
+                              </div>
+                         </div>
+          			</a>
+                         
+          			<a href="#" target="_blank">
+                         <div class="block">
+                              <div class="content_holder" src="images/example_3/04.jpg">
+                                   <div class="image"></div>
+                                   <div class="content" transitionType="bottom" transitionTime="0.5" distance="30" delay="0" x="0" y="0" alignV="bottom">
+                                        <div class="box"><p class="title">Playing time</p><p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
+                                   </div>
+                              </div>
+                         </div>
+                         </a>
+                         
+                         <a href="#" target="_blank">
+                         <div class="block">
+                              <div class="content_holder" src="images/example_3/05.jpg">
+                                   <div class="image"></div>
+                                  <div class="content" transitionType="bottom" transitionTime="0.5" distance="30" delay="0" x="0" y="0" alignV="bottom">
+                                        <div class="box"><p class="title">Who would say that</p><p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
+                                   </div>
+                              </div>
+                         </div>
+                         </a>
+                    </div>
+               </div>
+               <div class="previous accordion_button_simple">Previous</div>
+               <div class="next accordion_button_simple">Next</div>
+              
+    	  </div>
+     </div>
+     
+
+     </div>
+     
+     <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			buttonsClass("div.social_button");
+			
+			$("#accordion1").accordion(	{width:800, 	
+									height:400, 		
+									barSize:45,  	
+					 				cover:true,		
+					 				coverAlpha:0.5,
+					 				shadow:false,	
+					 				shadowAlpha:1,			
+					 				border:true,	
+									borderSize:2	,		
+					 				borderColor:"#ffffff",	
+					 				transitionTime:0.3,	
+									autoplay:false	,	
+									autoplayTime:5	,	
+									changeType:"over",	
+									previousBtn: $("div.previous.accordion_button_simple"),
+									nextBtn: $("div.next.accordion_button_simple") }
+									);
+		});
+     </script>
+	</body>
+</html>
